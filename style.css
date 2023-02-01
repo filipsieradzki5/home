@@ -1,8 +1,6 @@
 html,
 body {
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    
 }
 
 body {
@@ -21,7 +19,23 @@ footer {
     width: 100vw;
     margin: 0;
     flex: none;
-    scroll-snap-align: start;
+  
+}
+/* kkk*/
+.line_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    z-index: -1;
+}
+
+svg {
+    display: inline-block;
+    height: 100%;
 }
 
 /* -----------font---------- */
@@ -52,6 +66,12 @@ h4 {
     text-decoration: none;
 }
 
+.red {
+    color: rgb(255, 0, 0);
+    text-shadow: none;
+    font-weight: 800;
+}
+
 .work .fab,
 .work .fas {
     color: white;
@@ -74,14 +94,12 @@ i.fa-arrow-right {
 }
 
 i.fa-arrow-down {
-    font-size: 4em;
+    font-size: 2em;
     display: flex;
     flex-direction: row-reverse;
     position: relative;
     top: 20vh;
     color: white;
-    border: 1px solid red;
-    border-radius: 0.1em;
     padding: 0.2em;
 }
 
@@ -150,10 +168,7 @@ a {
     align-items: center;
 }
 
-.red {
-    color: rgb(255, 0, 0);
-    text-shadow: none;
-}
+
 
 /* -----------footer---------- */
 
@@ -193,22 +208,22 @@ footer {
 
 .img_split:nth-child(2) {
     background-position: 25%;
-    height: 60%;
+    height: 55%;
 }
 
 .img_split:nth-child(3) {
     background-position: 50%;
-    height: 70%;
+    height: 60%;
 }
 
 .img_split:nth-child(4) {
     background-position: 75%;
-    height: 60%;
+    height: 55%;
 }
 
 .img_split:nth-child(5) {
     background-position: 100%;
-    height: 50%
+    height: 50%;
 }
 
 .appear {
@@ -220,8 +235,8 @@ footer {
 @media screen and (min-width:675px) {
     html,
     body {
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
+       
+       
     }
     
     body {
