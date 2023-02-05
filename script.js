@@ -41,21 +41,21 @@ sections.forEach(section => {
 
 // line animation
 
-let path = document.querySelector('path')
-let pathLength = path.getTotalLength()
+// let path = document.querySelector('path')
+// let pathLength = path.getTotalLength()
 
-path.style.strokeDasharray = pathLength + ' ' + pathLength;
+// path.style.strokeDasharray = pathLength + ' ' + pathLength;
 
-path.style.strokeDashoffset = pathLength;
+// path.style.strokeDashoffset = pathLength;
 
-console.log(pathLength)
+// console.log(pathLength)
 
-window.addEventListener('scroll',() => {
-    let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-    let drawLength = pathLength * scrollPercentage + 200;
-    if ( pathLength >= drawLength) {
-        path.style.strokeDashoffset = pathLength - drawLength;
-    } else {
-        path.style.strokeDashoffset = pathLength - drawLength + 200;
-    }
-})
+// window.addEventListener('scroll',() => {
+//     let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+//     let drawLength = pathLength * scrollPercentage + 200;
+//     if ( pathLength >= drawLength) {
+//         path.style.strokeDashoffset = pathLength - drawLength;
+//     } else {
+//         path.style.strokeDashoffset = pathLength - drawLength + 200;
+//     }
+// })

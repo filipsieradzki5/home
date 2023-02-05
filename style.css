@@ -25,9 +25,9 @@ footer {
 .line_container {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 236px;
     width: 100vw;
-    height: 5500px;
+    height: 200vh;
     text-align: center;
     overflow: hidden;
     z-index: -1;
@@ -35,7 +35,7 @@ footer {
 
 svg {
     display: inline-block;
-    height: 100%;
+    height: 150vh;
 }
 
 /* -----------font---------- */
@@ -60,7 +60,7 @@ h3 {
 }
 
 h4 {
-    font-size: .75em;
+    font-size: 1em;
     margin: 1px;
     color: rgb(179, 179, 179);
     text-decoration: none;
