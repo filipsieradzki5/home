@@ -23,11 +23,11 @@ footer {
 }
 /* kkk*/
 .line_container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: 5500px;
     text-align: center;
     overflow: hidden;
     z-index: -1;
@@ -114,6 +114,19 @@ main {
     align-items: center;
  }
 
+ /* -----------about---------- */
+
+ .about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+ }
+
+ .about-container {
+    width: 50%;
+    margin: 10px;
+ }
+
  /* -----------projects---------- */
 
 .work {
@@ -122,20 +135,16 @@ main {
     align-content: center;
 }
 
-.img-box {
-    height: 25vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .project {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50vh;
+}
+
+.project-title{
+    display: flex;
 }
 
 .project:nth-child(even) {
@@ -162,6 +171,12 @@ a {
     align-items: center;
 }
 
+.projects_links h4,
+.fab.fa-github,
+.fas.fa-laptop {
+    font-size: 1.2em;
+    margin: 5px;
+}
 
 
 /* -----------footer---------- */
@@ -186,13 +201,23 @@ footer {
     transform: translateY(5px);
 }
 
+
 /* -----------image splitting---------- */
 
+.img-box {
+   height: 100%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img_split {
-    width: 7%;
-    background-image: url('https://picsum.photos/200.jpg');
-    margin: 5px;
-    opacity: 0;
+    width: 20%;
+    background-image: url('https://picsum.photos/400.jpg');
+    margin: 6px;
 }
 
 .img_split:nth-child(1) {
