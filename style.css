@@ -136,7 +136,7 @@ main {
  /* -----------about---------- */
 
  .about {
-    height: 50%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -167,7 +167,7 @@ main {
 
 .project-title{
     display: flex;
-    justify-content:flex-start;
+    justify-content:center;
     margin-left: 10vw;
 }
 
@@ -206,7 +206,6 @@ a {
 /* -----------footer---------- */
 
 footer {
-    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -271,7 +270,9 @@ footer {
 }
 
 .appear {
+    display: block;
     opacity: 1;
+    
     transition: 400ms ease-in;
 }
 

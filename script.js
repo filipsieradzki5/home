@@ -16,23 +16,25 @@ let observer = new IntersectionObserver(navCheck, {
 function navCheck(entries) {
     entries.forEach(entry => {
         
-        if (entry.isIntersecting && entry.target.className == 'MAIN') {
+        if (entry.isIntersecting && entry.target.classList.value.includes('home')) {
             homeNav.classList.add('red');
-        } else if (entry.isIntersecting && entry.target.nodeName == 'DIV') {
+            console.log(entry.target.classList[0])
+        } else if (entry.isIntersecting && entry.target.classList.value.includes('about')) {
+            aboutNav.classList.add('red')
+
+        } else if (entry.isIntersecting && entry.target.classList.value.includes('work')) {
             workNav.classList.add('red');
             image.forEach(image => image.classList.add('appear'));
             
-
-        } else if (entry.isIntersecting && entry.target.classList.value == 'contact') {
+        } else if (entry.isIntersecting && entry.target.classList.value.includes('contact')) {
             contactNav.classList.add('red')
             console.log(entry.target.value)
             
-        } else if (entry.isIntersecting && entry.target.nodeName == 'MAIN') {
-            aboutNav.classList.add('red')
         } else {
             homeNav.classList.remove('red');
             workNav.classList.remove('red');
             contactNav.classList.remove('red');
+            aboutNav.classList.remove('red');
         }
     })
 }
