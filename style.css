@@ -9,18 +9,26 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    flex-direction: column;
 }
 
 nav,
-main,
-.work,
-footer {
-    width: 100vw;
-    margin: 0;
-    flex: none;
-  
-}
+    main,
+    .work,
+    footer {
+        width: 100vw;
+        margin: 0;
+        scroll-snap-align: start;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    footer {
+        height: 30vh;
+    }
+
 /* kkk*/
 .line_container {
     position: absolute;
@@ -34,10 +42,21 @@ footer {
 }
 
 svg {
-    display: inline-block;
-    height: 150vh;
+    height: 50vh;
+    width: 50vw;
 }
 
+.path {
+    stroke-dasharray: 50000;
+    stroke-dashoffset: 50000;
+    animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 /* -----------font---------- */
 
 h1 {
@@ -117,9 +136,11 @@ main {
  /* -----------about---------- */
 
  .about {
+    height: 50%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
  }
 
  .about-container {
@@ -141,10 +162,13 @@ main {
     align-items: center;
     justify-content: center;
     height: 50vh;
+    
 }
 
 .project-title{
     display: flex;
+    justify-content:flex-start;
+    margin-left: 10vw;
 }
 
 .project:nth-child(even) {
@@ -218,6 +242,7 @@ footer {
     width: 20%;
     background-image: url('https://picsum.photos/400.jpg');
     margin: 6px;
+    display: none;
 }
 
 .img_split:nth-child(1) {
@@ -250,37 +275,6 @@ footer {
     transition: 400ms ease-in;
 }
 
-/* -----------media-----------*/
-@media screen and (min-width:675px) {
-    html,
-    body {
-       
-       
-    }
-    
-    body {
-        background-color: black;
-        color: rgb(0, 0, 0);
-        font-family: 'Roboto', sans-serif;
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
-    }
-    
-    nav,
-    main,
-    .work,
-    footer {
-        width: 100vw;
-        margin: 0;
-        scroll-snap-align: start;
-    }
-
-    main {
-        height: 100vh;
-    }
-
-    footer {
-        height: 30vh;
-    }
-}
+/*-----------media-----------*/
+ @media screen and (min-width:675px) {
+ }
