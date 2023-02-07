@@ -96,6 +96,11 @@ nav {
     background-color: black;
 }
 
+button {
+    background-color: black;
+    border: none;
+}
+
 /* -----------home page---------- */
 
 main {

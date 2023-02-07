@@ -71,6 +71,26 @@ sections.forEach(section => {
 
 // smooth scroll
 
-document.querySelector('.about').scrollIntoView({ 
-    behavior: 'smooth' 
-  });
+const homeScroll = () => {
+    document.querySelector('.home').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+}
+
+const aboutScroll = () => {
+    document.querySelector('.about').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+}
+
+const workScroll = () => {
+    document.querySelector('.work').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+}
+
+const contactScroll = () => {
+    document.querySelector('.contact').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+}
