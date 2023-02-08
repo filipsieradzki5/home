@@ -77,7 +77,7 @@ footer .fas {
 
 i.fa-arrow-down {
     font-size: 2em;
-    position: static;
+    position: relative;
     top: 20vh;
     color: white;
     padding: 0.2em;
@@ -110,6 +110,9 @@ main {
     align-items: center;
  }
 
+ .arrow-down {
+    color: white;
+ }
  /* -----------about---------- */
 
  .about {
@@ -262,8 +265,8 @@ svg {
 
 .path {
     display: block;
-    stroke-dasharray: 50000;
-    stroke-dashoffset: 50000;
+    stroke-dasharray: 50500;
+    stroke-dashoffset: 50500;
     animation: dash 6s linear forwards;
 }
 
@@ -273,5 +276,56 @@ svg {
     }
   }
 /*-----------media-----------*/
- @media screen and (min-width:675px) {
+ @media screen and (max-width:675px) {
+/* -----------font---------- */
+
+h1 {
+    font-size: 3em;   
+}
+
+h2 {
+    font-size: 1em;  
+}
+
+h3 {
+    font-size: 0.75em;
+}
+
+h4 {
+    font-size: 0.5em;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.about {
+    height: auto;
+    margin-bottom: 10vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    width: 80vw;
+    align-items: center;
+}
+
+.path {
+    height: 20vh;
+}
+
+.img-box {
+    height: 50%;
+     margin-left: 5vw;
+     margin-right: 5vw;
+     width: 40%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
  }

@@ -11,7 +11,7 @@ const svg = document.querySelector('svg');
 const wait = (amount = 0) => new Promise(resolve => setTimeout(resolve, amount));
 
 let observer = new IntersectionObserver(navCheck, {
-    thresholds: [0.3, 0.9]
+    threshold: [0.3, 0.8]
 });
 
 function navCheck(entries) {
