@@ -299,12 +299,16 @@ h2 {
     font-size: 1em;  
 }
 
+.project-title h2 {
+    font-size: 2em;
+}
+
 h3 {
     font-size: 0.75em;
 }
 
 h4 {
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 
 main {
@@ -314,9 +318,11 @@ main {
     scroll-snap-align: start;
 }
 
-.fa-arrow-down {
+i.fas,
+i.fa-arrow-down {
     display: none;
 }
+
 .work {
     flex:none;
     display: flex;
@@ -348,15 +354,15 @@ main {
     scroll-snap-align: start;
 }
 
-.flex-item:nth-of-type(1) {
+.about .flex-item:nth-of-type(1) {
     order: 1;
 }
 
-.flex-item:nth-of-type(2) {
+.about .flex-item:nth-of-type(2) {
     order: 3;
 }
 
-.flex-item:nth-of-type(3) {
+.about .flex-item:nth-of-type(3) {
     order: 2;
 }
 
@@ -365,8 +371,27 @@ main {
     align-items: center;
 }
 
+
+svg {
+    height: 80vh;
+    width: 80vw;
+    display: none;
+}
+
 .path {
     height: 20vh;
+}
+
+.project .flex-item:nth-of-type(1) {
+    order: 2;
+}
+
+.project .flex-item:nth-of-type(2) {
+    order: 1;
+}
+
+.project .flex-item:nth-of-type(3) {
+    order: 3;
 }
 
 .img-box {
