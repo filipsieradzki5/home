@@ -28,16 +28,14 @@ function navCheck(entries) {
             homeNav.classList.remove('red');
             workNav.classList.remove('red');
             contactNav.classList.remove('red');
-        } else if (entry.isIntersecting && entry.target.classList.value.includes('work')) {
+        } else if (entry.isIntersecting && entry.target.classList.value.includes('project')) {
             workNav.classList.add('red');
             image.forEach(image => image.classList.add('appear'));
             homeNav.classList.remove('red');
             contactNav.classList.remove('red');
             aboutNav.classList.remove('red');
-            console.log('working')
         } else if (entry.isIntersecting && entry.target.classList.value.includes('contact')) {
             contactNav.classList.add('red')
-            console.log(entry.target.value)
             homeNav.classList.remove('red');
             workNav.classList.remove('red');
             aboutNav.classList.remove('red');
