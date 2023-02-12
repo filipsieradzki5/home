@@ -313,16 +313,19 @@ main {
     scroll-snap-align: start;
 }
 .work {
-    flex: none;
-    flex-direction: row;
+    flex:none;
+    display: flex;
     scroll-snap-align: start;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
-
-
 .project {
+    flex: none;
+    display: flex;
+    flex-direction: column !important;
     align-items: center;
-    justify-content: center;
+    justify-content: center !important;
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
@@ -352,10 +355,13 @@ main {
     height: 50%;
      margin-left: 5vw;
      margin-right: 5vw;
-     width: 40%;
+     width: 80%;
      display: flex;
      justify-content: center;
      align-items: center;
+ }
+ .wrapper {
+    width: 80%;
  }
 
  footer {
