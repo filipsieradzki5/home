@@ -1,5 +1,6 @@
 html {
    scroll-behavior: smooth; 
+   scroll-snap-type: y proximity;
    overflow-x: hidden;
 }
 
@@ -15,11 +16,17 @@ body {
 
     nav,
     main,
-    .work,
+    .about,
+    .project
     footer {
         width: 100vw;
         margin: 0;
+    }
+
+    main,
+    .about{
         scroll-snap-align: start;
+
     }
 
     main {
@@ -131,13 +138,20 @@ main {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .project-title{
+    width:100%;
+    display: flex;
+    justify-content: center;
  }
 
  .about-container {
     width: 40%;
     margin: 10px;
+    justify-content: center;
  }
 
  /* -----------projects---------- */
