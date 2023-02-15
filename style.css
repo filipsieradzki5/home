@@ -122,15 +122,46 @@ main {
     color: white;
  }
 
- .social-button {
+ .social-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
     color: white;
-    height: 60px;
-    width: 15vw;
-    border: 1px solid white;
-    border-radius: 30px;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+ }
+
+.social-box a {
+    text-decoration: none;
+}
+
+ .social-box .fab.fa-github,
+ .social-box .fab.fa-linkedin
+  {
+    font-size: 2.2em;
+    margin: 20px;
+    color: white;
+ }
+ 
+ 
+ .social-box .fa-solid.fa-download {
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+    }
+    
+.fa-solid.fa-download {
+        font-size: 1.5em;
+        color: white;
+    }
+    
+.fa-solid.fa-download a {
+       text-decoration: none;
+    }
+
+ .social-box h3 {
+    font-size: 0.4em;
  }
  /* -----------about---------- */
 
@@ -427,18 +458,19 @@ svg {
 }
 
 .project .flex-item:nth-of-type(1) {
-    order: 2;
+    order: 2 !important;
 }
 
 .project .flex-item:nth-of-type(2) {
-    order: 1;
+    order: 1 !important;
 }
 
-.project .flex-item:nth-of-type(3) {
-    order: 3;
+.project .flex-item:nth-of-type(3)
+ {
+    order: 3 !important;
 }
 
-.img-box {
+.project .img-box {
     height: 50%;
      margin-left: 5vw;
      margin-right: 5vw;
@@ -447,8 +479,9 @@ svg {
      justify-content: center;
      align-items: center;
  }
- .wrapper {
+ .project .wrapper {
     width: 80%;
+    margin: 0;
  }
 
  footer {
@@ -460,11 +493,4 @@ svg {
     align-items: center;
  }
 
- .social {
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
- }
  }
