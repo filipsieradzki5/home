@@ -82,7 +82,7 @@ const aboutScroll = () => {
 }
 
 const workScroll = () => {
-    document.querySelector('.work').scrollIntoView({ 
+    document.querySelector('.project').scrollIntoView({ 
         behavior: 'smooth' 
       });
 }
