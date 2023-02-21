@@ -30,7 +30,8 @@ function navCheck(entries) {
             contactNav.classList.remove('red');
         } else if (entry.isIntersecting && entry.target.classList.value.includes('project')) {
             workNav.classList.add('red');
-            image.forEach(image => image.classList.add('appear'));
+            console.log(entry.target.children[0].children)
+            //entry.target.children[0].children.forEach(child => child.classList.add('appear'));
             homeNav.classList.remove('red');
             contactNav.classList.remove('red');
             aboutNav.classList.remove('red');
